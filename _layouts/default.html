@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="{{- '/' | relative_url -}}">
+          <img src="{{- '/assets/img/logo.svg' | relative_url -}}" alt="{{- site.title -}}" height="45">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link" href="{{- '/' | relative_url -}}">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-dark" href="#contact">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5">
+      <div class="container">
+        <div class="col-6">
+          <p class="display-6">Our strategy. Your Success.<br>Marketing refefined.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget dictum justo, ac posuere felis. Morbi in purus eu ligula sodales tristique. Etiam pretium risus quis.</p>
+          <a class="btn btn-dark btn-lg" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-bar-chart-line-fill display-3"></i>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis fermentum tellus, non aliquet neque. Mauris ullamcorper neque ut massa sodales.</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-cake2-fill display-3"></i>
+            <h3>Donec consequat</h3>
+            <p>Donec consequat tempus ante in posuere. Donec pulvinar tellus suscipit augue hendrerit, vitae scelerisque justo rhoncus. Fusce at eros quam.</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-chat-left-heart-fill display-3"></i>
+            <h3>Maecenas ultricies</h3>
+            <p>Maecenas id ultricies est. Sed finibus feugiat accumsan. In venenatis consequat ante, id molestie nunc congue sit amet. Praesent lorem tortor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark-subtle">
+      <div class="container">
+        <form class="col-5">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
