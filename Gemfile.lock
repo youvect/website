@@ -68,7 +68,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
-  jekyll (~> 4.3.3)
+  jekyll (~> 4.2)
   paraqeet
 
 BUNDLED WITH
