@@ -2,55 +2,61 @@
 layout: default
 ---
 
-<section class="py-5">
+<!-- Hero-->
+<section class="module-cover parallax text-center fullscreen" data-background="assets/images/module-3.jpg" data-overlay="0.6">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
-        <p class="display-6">Our strategy. <br class="d-sm-none"> Your Success. <br> Marketing redefined.</p>
-        <p>Transforming brands, amplifying reach: we specialise in strategic digital marketing solutions tailored to elevate your online presence and drive meaningful engagement ultimately maximising your brands impact and growth potential.</p>
-        <a class="btn btn-dark btn-lg" href="#contact">Get in touch</a>
+      <div class="col-md-12">
+        <h1 class="m-b-20"><strong>{{ site.description }}</strong></h1>
+        <p class="m-b-40">Transforming brands, amplifying reach: we specialise in strategic digital marketing solutions tailored to elevate your online presence and drive meaningful engagement ultimately maximising your brands impact and growth potential.</p>
+        <p>
+          <a class="btn btn-lg btn-circle btn-brand" href="{{- '/contact' | relative_url -}}">Get in touch</a>
+          <a class="btn btn-lg btn-circle btn-outline-new-white" href="{{- '/services' | relative_url -}}">Learn more</a>
+        </p>
       </div>
     </div>
   </div>
 </section>
+<!-- Hero end-->
 
-<section id="services" class="py-5 bg-dark text-white">
+<!-- Alt Services-->
+<section class="module bg-gray" id="services">
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-3">
-      <div class="col my-5">
-        <i class="bi bi-bar-chart-line-fill display-3"></i>
-        <h3>Social media marketing</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis fermentum tellus, non aliquet neque. Mauris ullamcorper neque ut massa sodales.</p>
-      </div>
-      <div class="col my-5">
-        <i class="bi bi-cake2-fill display-3"></i>
-        <h3>Search engine optimisation</h3>
-        <p>Donec consequat tempus ante in posuere. Donec pulvinar tellus suscipit augue hendrerit, vitae scelerisque justo rhoncus. Fusce at eros quam.</p>
-      </div>
-      <div class="col my-5">
-        <i class="bi bi-chat-left-heart-fill display-3"></i>
-        <h3>Email marketing</h3>
-        <p>Maecenas id ultricies est. Sed finibus feugiat accumsan. In venenatis consequat ante, id molestie nunc congue sit amet. Praesent lorem tortor.</p>
+    <div class="row align-items-center">
+      <div class="col-lg-6"><img src="assets/images/main/ipad.png" alt=""></div>
+      <div class="col-lg-5 offset-lg-1">
+        <h2>Services & Deliverables.</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar condimentum ornare. Pellentesque habitant morbi tristique senectus.</p>
+        <div class="space" data-MY="50px"></div>
+        <div class="icon-box icon-box-left">
+          <div class="icon-box-icon"><span class="ti-layout"></span></div>
+          <div class="icon-box-title">
+            <h6>Social Media Marketing</h6>
+          </div>
+          <div class="icon-box-content">
+            <p>Aenean libero nulla, euismod sed lectus consequat, porttitor vulputate lorem. Sed dignissim fermentum accumsan. Cras luctus lectus sed turpis.</p>
+          </div>
+        </div>
+        <div class="icon-box icon-box-left">
+          <div class="icon-box-icon"><span class="ti-cup"></span></div>
+          <div class="icon-box-title">
+            <h6>Search Engine Optimisation</h6>
+          </div>
+          <div class="icon-box-content">
+            <p>Aliquam vehicula lorem id condimentum placerat. Sed ut est placerat, pellentesque ante vel, placerat dui. Vestibulum tempor dui nisl maecenas.</p>
+          </div>
+        </div>
+        <div class="icon-box icon-box-left">
+          <div class="icon-box-icon"><span class="ti-harddrives"></span></div>
+          <div class="icon-box-title">
+            <h6>Email Marketing</h6>
+          </div>
+          <div class="icon-box-content">
+            <p>Nulla non dolor vel ex aliquet convallis non at urna. Pellentesque erat magna, sodales eget neque a, pellentesque faucibus risus aenean convallis.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<section id="contact" class="py-5 bg-dark-subtle">
-  <div class="container">
-    <div class="row">
-      <form class="col-12 col-sm-10 col-md-8 col-lg-6">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-    </div>
-  </div>
-</section>
+<!-- Alt Services end-->

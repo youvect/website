@@ -1,15 +1,23 @@
 ---
-title: Page not found
-description: The requested page could not be found
+title: Page not found.
+description: The requested page could not be found.
 permalink: /404.html
 layout: default
 ---
 
-<main class="d-flex vh-100 align-items-center bg-light text-center">
+<!-- Hero-->
+<section class="module-cover parallax text-center fullscreen" data-background="assets/images/module-10.jpg" data-overlay="0.6">
   <div class="container">
-    <p class="font-monospace">404</p>
-    <h1 class="display-4">{{ page.title }}</h1>
-    <p class="lead">{{ page.description }}</p>
-    <p><a class="btn btn-dark" href="{{ '/' | relative_url }}">Home</a></p>
+    <div class="row">
+      <div class="col-md-12">
+        <small>404</small>
+        <h1 class="m-b-20"><strong>{{ page.title }}</strong></h1>
+        <p class="m-b-40">{{ page.description }}</p>
+        <p>
+          <a class="btn btn-lg btn-circle btn-brand" href="{{- '/' | relative_url -}}">Home</a>
+        </p>
+      </div>
+    </div>
   </div>
-</main>
+</section>
+<!-- Hero end-->

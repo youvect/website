@@ -3,8 +3,6 @@ description: Our strategy. Your Success. Marketing redefined.
 baseurl: "/website"
 url: "https://youvect.github.io"
 
-theme: paraqeet
-
 plugins:
   - jekyll-redirect-from
 
