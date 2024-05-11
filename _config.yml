@@ -6,6 +6,12 @@ language: en
 region: gb
 twitter: "youvect"
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 plugins:
   - jekyll-redirect-from
 
