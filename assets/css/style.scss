@@ -5,3 +5,16 @@
 @import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
 @import "plugins";
 @import "template";
+
+.gcas {
+  height: 1100px;
+  @media (min-width: 576px) {
+    height: 1300px;
+  }
+  @media (min-width: 768px) {
+    height: 650px;
+  }
+  @media (min-width: 992px) {
+    height: 850px;
+  }
+}
