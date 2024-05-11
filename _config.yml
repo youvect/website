@@ -2,6 +2,9 @@ title: Youvect
 description: Our strategy. Your success. Marketing redefined.
 baseurl: "/website"
 url: "https://youvect.github.io"
+language: en
+region: gb
+twitter: "youvect"
 
 plugins:
   - jekyll-redirect-from
@@ -11,3 +14,6 @@ redirect_from:
 
 exclude:
   - README.md
+
+sass:
+  style: :compressed
