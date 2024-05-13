@@ -60,6 +60,46 @@
 </section>
 <!-- Alt Services end-->
 
+<!-- Posts-->
+<section class="module" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto text-center">
+        <h1>Latest Articles</h1>
+        <p class="lead">Integer finibus dignissim metus, eget eleifend tortor condimentum et. Duis auctor condimentum tellus non suscipit.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="space" data-MY="60px"></div>
+      </div>
+    </div>
+    <div class="row row-post-masonry">
+      {% for post in site.posts %}
+        {%- assign image = '/assets/img/posts/' | append: post.image | relative_url -%}
+        {%- assign url = post.url | relative_url -%}
+        <div class="col-md-4 post-item">
+          <!-- Post-->
+          <article class="post">
+            <div class="post-preview"><a href="{{- url -}}"><img src="{{- image -}}" alt="{{- post.title -}}"></a></div>
+            <div class="post-wrapper">
+              <div class="post-header">
+                <h2 class="post-title"><a href="{{- url -}}">{{- post.title -}}</a></h2>
+              </div>
+              <div class="post-content">
+                <p>{{- post.description | truncate: 120 -}}</p>
+                <p><a href="{{- url -}}">Read more</a></p>
+              </div>
+            </div>
+          </article>
+          <!-- Post end-->
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- Posts end-->
+
 <!-- About-->
 <section class="module divider-bottom" id="contact">
   <div class="container">

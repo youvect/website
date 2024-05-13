@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{%- assign image = '/assets/img/posts/' | append: page.image | relative_url -%}
+
+<!-- Hero-->
+<section class="module-cover parallax text-center" data-background="{{- image -}}" data-overlay="0.3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{- page.title -}}</h1>
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="{{- '/' | relative_url -}}">Home</a></li>
+          <li class="breadcrumb-item"><a href="{{- '/blog' | relative_url -}}">Blog</a></li>
+          <li class="breadcrumb-item active">{{- page.title -}}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hero end-->
+
+<!-- Blog-->
+<section class="module">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 m-auto">
+        <!-- Post-->
+        <article class="post">
+          <div class="post-wrapper">
+            <div class="post-header">
+              <ul class="post-meta">
+                <li>{{ page.date | date: "%B %e, %Y" }}</li>
+              </ul>
+            </div>
+            <div class="post-content">
+              {{ content }}
+            </div>
+          </div>
+        </article>
+        <!-- Post end-->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Blog end-->
