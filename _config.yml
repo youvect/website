@@ -11,6 +11,10 @@ defaults:
       path: ""
     values:
       layout: default
+  - scope:
+      type: "posts"
+    values:
+      layout: post
 
 collections:
   posts:

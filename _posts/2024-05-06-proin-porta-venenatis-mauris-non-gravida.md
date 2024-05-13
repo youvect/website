@@ -2,7 +2,6 @@
 title: Proin porta venenatis mauris non gravida
 description: Proin porta venenatis mauris non gravida. Pellentesque luctus quam metus, a lobortis leo venenatis at. Fusce dapibus ultrices lobortis. Curabitur blandit placerat sem in hendrerit.
 image: qingbao-meng-01_igFr7hd4-unsplash.jpg
-layout: post
 ---
 
 ## Proin porta venenatis mauris non gravida

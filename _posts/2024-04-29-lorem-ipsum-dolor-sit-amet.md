@@ -2,7 +2,6 @@
 title: Lorem ipsum dolor sit amet
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit ultrices laoreet. Vivamus scelerisque nisl vel enim lobortis interdum.
 image: matt-hardy-6ArTTluciuA-unsplash.jpg
-layout: post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit ultrices laoreet. Vivamus scelerisque nisl vel enim lobortis interdum. Donec sed sem in purus convallis gravida vel et sapien. Integer accumsan, sem ultricies malesuada ullamcorper, orci elit viverra risus, in dictum quam massa in lorem. Donec ut quam ultricies, tincidunt ante nec, dapibus ex. Nunc ac blandit nisl. Praesent malesuada mauris velit, sed sodales tortor ornare ut. Aliquam luctus lorem enim. Aliquam at sagittis justo. Duis blandit velit gravida dui porta tempor. Maecenas maximus, quam cursus porttitor ullamcorper, magna ligula malesuada eros, eget vehicula orci quam sed metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam tristique, ante eget tempus suscipit, arcu libero mattis sapien, at maximus orci velit at dolor. Integer volutpat non nisl non gravida. Praesent cursus aliquam dictum. Suspendisse accumsan tempus ex, et dapibus nunc tincidunt id.

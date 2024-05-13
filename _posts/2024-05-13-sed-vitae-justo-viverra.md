@@ -2,7 +2,6 @@
 title: Sed vitae justo viverra
 description: Sed vitae justo viverra, dapibus est in, faucibus felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 image: quino-al-mBQIfKlvowM-unsplash.jpg
-layout: post
 ---
 
 Sed vitae justo viverra, dapibus est in, faucibus felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam at lorem euismod, lacinia justo quis, laoreet purus. Aenean porta, diam eu vulputate euismod, tellus nunc accumsan ligula, eget ornare mi ligula tincidunt neque.
