@@ -12,6 +12,11 @@ defaults:
     values:
       layout: default
 
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
+
 plugins:
   - jekyll-redirect-from
 
