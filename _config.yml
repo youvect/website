@@ -5,7 +5,6 @@ baseurl: "/website"
 url: "https://youvect.github.io"
 language: en
 region: gb
-twitter: "youvect"
 date_format: "%B %e, %Y"
 
 defaults:
@@ -30,6 +29,9 @@ redirect_from:
   json: false
 
 exclude:
+  - assets/js/bootstrap
+  - assets/js/custom
+  - Rakefile
   - README.md
 
 sass:
