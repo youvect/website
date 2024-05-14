@@ -2,10 +2,8 @@
 layout: default
 ---
 
-{%- assign image = '/assets/img/posts/' | append: page.image | relative_url -%}
-
 <!-- Hero-->
-<section class="module-cover parallax text-center" data-background="{{- image -}}" data-overlay="0.3">
+<section class="module-cover parallax text-center" data-background="{%- include image.html id=page.image_id -%}" data-overlay="0.3">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -35,6 +33,7 @@ layout: default
               </ul>
             </div>
             <div class="post-content">
+              <p class="lead mb-5">{{- page.description -}}</p>
               {{ content }}
             </div>
           </div>

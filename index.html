@@ -76,12 +76,11 @@
     </div>
     <div class="row row-post-masonry">
       {% for post in site.posts %}
-        {%- assign image = '/assets/img/posts/' | append: post.image | relative_url -%}
         {%- assign url = post.url | relative_url -%}
         <div class="col-md-4 post-item">
           <!-- Post-->
           <article class="post">
-            <div class="post-preview"><a href="{{- url -}}"><img src="{{- image -}}" alt="{{- post.title -}}"></a></div>
+            <div class="post-preview"><a href="{{- url -}}"><img src="{%- include image.html id=post.image_id w=600 h=400 -%}" alt="{{- post.title -}}"></a></div>
             <div class="post-wrapper">
               <div class="post-header">
                 <h2 class="post-title"><a href="{{- url -}}">{{- post.title -}}</a></h2>

@@ -1,0 +1,32 @@
+{%- assign id = '' -%}
+{%- assign q = 80 -%}
+{%- assign w = 1200 -%}
+{%- assign h = 800 -%}
+{%- assign fit = 'crop' -%}
+{%- assign image = '' -%}
+
+{%- if include.id -%}
+
+  {%- assign id = include.id -%}
+
+  {%- if include.q -%}
+    {%- assign q = include.q -%}
+  {%- endif -%}
+
+  {%- if include.w -%}
+    {%- assign w = include.w -%}
+  {%- endif -%}
+
+  {%- if include.h -%}
+    {%- assign h = include.h -%}
+  {%- endif -%}
+
+  {%- if include.fit -%}
+    {%- assign fit = include.fit -%}
+  {%- endif -%}
+
+  {%- capture image -%}https://images.unsplash.com/photo-{{- id -}}?q={{- q -}}&w={{- w -}}&h={{- h -}}&fit={{- fit -}}{%- endcapture -%}
+
+{%- endif -%}
+
+{{- image -}}
