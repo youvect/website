@@ -1,7 +1,9 @@
 ---
 title: "Revolutionising Email Marketing with Youvect: The Path to Conversion"
 description: "In an era of fleeting digital attention spans, email marketing remains a stalwart channel for nurturing leads, driving conversions, and fostering long-term customer relationships. However, unlocking the full potential of email marketing demands more than just sending mass newsletters; it requires strategic segmentation, personalised messaging, and automated workflows. Enter Youvect, the email marketing maestro poised to transform your brand's engagement and conversion rates."
-image_id: 1501504905252-473c47e087f8
+image:
+  id: 1501504905252-473c47e087f8
+  author: nickmorrison
 ---
 
 ## Crafting Compelling Email Campaigns That Convert

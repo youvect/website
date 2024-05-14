@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- Hero-->
-<section class="module-cover parallax text-center" data-background="{%- include image.html id=page.image_id -%}" data-overlay="0.3">
+<section class="module-cover parallax text-center" data-background="{%- include image.html id=page.image.id -%}" data-overlay="0.3">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -11,7 +11,7 @@ layout: default
         <ol class="breadcrumb justify-content-center">
           <li class="breadcrumb-item"><a href="{{- '/' | relative_url -}}">Home</a></li>
           <li class="breadcrumb-item"><a href="{{- '/blog' | relative_url -}}">Blog</a></li>
-          <li class="breadcrumb-item active">{{- page.title -}}</li>
+          <li class="breadcrumb-item active">Photo by <a href="https://unsplash.com/@{{- page.image.author -}}">@{{- page.image.author -}}</a> on <a href="https://unsplash.com/">Unsplash</a></li>
         </ol>
       </div>
     </div>

@@ -1,7 +1,9 @@
 ---
 title: "Dominating Search Engines with Youvect: A Guide to SEO Success"
 description: "In the vast digital landscape, visibility is key to success, and search engine optimisation (SEO) is the cornerstone of online discoverability. Achieving top rankings on search engine results pages (SERPs) demands more than just keywords and metadata; it requires a comprehensive strategy tailored to your brand's unique needs. Enter Youvect, the SEO powerhouse that's poised to elevate your brand to new heights of online prominence."
-image_id: 1486406146926-c627a92ad1ab
+image:
+  id: 1486406146926-c627a92ad1ab
+  author: seanpollock
 ---
 
 ## Crafting Your Path to SEO Success

@@ -1,7 +1,9 @@
 ---
 title: "Mastering the Art of Social Media Marketing with Youvect"
 description: "In today's digital age, social media has emerged as a powerhouse for brand visibility, engagement, and growth. Leveraging the full potential of social platforms requires more than just posting content; it demands strategic planning, creative storytelling, and relentless dedication. Enter Youvect, a pioneering marketing agency poised to revolutionise your social media game."
-image_id: 1587614313085-5da51cebd8ac
+image:
+  id: 1587614313085-5da51cebd8ac
+  author: windows
 ---
 
 ## Understanding the Youvect Approach
