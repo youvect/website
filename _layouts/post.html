@@ -2,45 +2,43 @@
 layout: default
 ---
 
-<!-- Hero-->
-<section class="module-cover parallax text-center" data-background="{%- include image.html id=page.image.id -%}" data-overlay="0.3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>{{- page.title -}}</h1>
-        <ol class="breadcrumb justify-content-center">
-          <li class="breadcrumb-item"><a href="{{- '/' | relative_url -}}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{{- '/blog' | relative_url -}}">Blog</a></li>
-          <li class="breadcrumb-item active">Photo by <a href="https://unsplash.com/@{{- page.image.author -}}">@{{- page.image.author -}}</a> on <a href="https://unsplash.com/">Unsplash</a></li>
-        </ol>
+<atricle>
+
+  <div class="module-cover parallax text-center" data-background="{%- include image.html id=page.image.id -%}" data-overlay="0.3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{- page.title -}}</h1>
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="{{- '/' | relative_url -}}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{- '/blog' | relative_url -}}">Blog</a></li>
+            <li class="breadcrumb-item active">Photo by <a href="https://unsplash.com/@{{- page.image.author -}}">@{{- page.image.author -}}</a> on <a href="https://unsplash.com/">Unsplash</a></li>
+          </ol>
+        </div>
       </div>
     </div>
   </div>
-</section>
-<!-- Hero end-->
 
-<!-- Blog-->
-<section class="module">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 m-auto">
-        <!-- Post-->
-        <article class="post">
-          <div class="post-wrapper">
-            <div class="post-header">
-              <ul class="post-meta">
-                <li>{{ page.date | date: site.date_format }}</li>
-              </ul>
-            </div>
-            <div class="post-content">
-              <p class="lead mb-5">{{- page.description -}}</p>
-              {{ content }}
+  <div class="module">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 m-auto">
+          <div class="post">
+            <div class="post-wrapper">
+              <div class="post-header">
+                <ul class="post-meta">
+                  <li>{{ page.date | date: site.date_format }}</li>
+                </ul>
+              </div>
+              <div class="post-content">
+                <p class="lead mb-5">{{- page.description -}}</p>
+                {{ content }}
+              </div>
             </div>
           </div>
-        </article>
-        <!-- Post end-->
+        </div>
       </div>
     </div>
   </div>
-</section>
-<!-- Blog end-->
+
+</atricle>
