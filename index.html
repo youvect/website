@@ -1,12 +1,14 @@
 ---
 ---
 
-<!-- Hero-->
+<h1 class="sr-only">{{- site.title -}}</h1>
+
 <section class="module-cover parallax text-center fullscreen" data-background="assets/images/module-2.jpg" data-overlay="0.6">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="m-b-20"><strong>{{ site.tagline }}</strong></h1>
+        <h2 class="sr-only">Introduction</h2>
+        <p class="h1 module-cover-h1 m-b-20"><strong>{{ site.tagline }}</strong></p>
         <p class="m-b-40">{{- site.description -}}</p>
         <p>
           <a class="btn btn-lg btn-circle btn-brand mb-3 mb-sm-0" href="{{- '/contact' | relative_url -}}">Get in touch</a>
@@ -16,9 +18,7 @@
     </div>
   </div>
 </section>
-<!-- Hero end-->
 
-<!-- Alt Services-->
 <section class="module bg-gray" id="services">
   <div class="container">
     <div class="row align-items-center">
@@ -27,45 +27,27 @@
         <h2>Services &amp; Deliverables </h2>
         <p class="lead">Our agency's services elevate brand advertising through strategic planning, creative content, and targeted distribution across channels, maximising visibility and engagement for impactful results.</p>
         <div class="space" data-MY="50px"></div>
-        <div class="icon-box icon-box-left">
-          <div class="icon-box-icon"><span class="ti-user"></span></div>
-          <div class="icon-box-title">
-            <h6>Social Media Marketing</h6>
+        {% for service in site.data.services %}
+          <div class="icon-box icon-box-left">
+            <div class="icon-box-icon"><span class="ti-{{- service.icon -}}"></span></div>
+            <div class="icon-box-title">
+              <h3 class="h6">{{- service.title | escape -}}</h3>
+            </div>
+            <div class="icon-box-content">
+              <p>​​{{- service.description | escape -}}</p>
+            </div>
           </div>
-          <div class="icon-box-content">
-            <p>​​Promoting your business through platforms like Facebook, Instagram, and Twitter to reach and engage with customers, boost brand awareness, and drive sales.</p>
-          </div>
-        </div>
-        <div class="icon-box icon-box-left">
-          <div class="icon-box-icon"><span class="ti-search"></span></div>
-          <div class="icon-box-title">
-            <h6>Search Engine Optimisation</h6>
-          </div>
-          <div class="icon-box-content">
-            <p>Optimising your website to rank higher in search engine results, increasing visibility and attracting more organic traffic.</p>
-          </div>
-        </div>
-        <div class="icon-box icon-box-left">
-          <div class="icon-box-icon"><span class="ti-email"></span></div>
-          <div class="icon-box-title">
-            <h6>Email Marketing</h6>
-          </div>
-          <div class="icon-box-content">
-            <p>Sending targeted emails to your subscribers to nurture relationships, promote products or services, and drive conversions.</p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </section>
-<!-- Alt Services end-->
 
-<!-- Posts-->
-<section class="module" id="blog">
+<section class="module divider-bottom" id="blog">
   <div class="container">
     <div class="row">
       <div class="col-md-6 m-auto text-center">
-        <h1>Latest Articles</h1>
+        <h2 class="h1">Latest Articles</h2>
         <p class="lead">Stay up-to-date with the latest agency news, marketing research, and industry updates from our team.</p>
       </div>
     </div>
@@ -78,12 +60,11 @@
       {% for post in site.posts %}
         {%- assign url = post.url | relative_url -%}
         <div class="col-md-4 post-item">
-          <!-- Post-->
           <article class="post">
             <div class="post-preview"><a href="{{- url -}}"><img src="{%- include image.html id=post.image.id w=600 h=400 -%}" alt="{{- post.title -}}"></a></div>
             <div class="post-wrapper">
               <div class="post-header">
-                <h2 class="post-title"><a href="{{- url -}}">{{- post.title -}}</a></h2>
+                <h3 class="post-title"><a href="{{- url -}}">{{- post.title -}}</a></h3>
               </div>
               <div class="post-content">
                 <p>{{- post.description | truncate: 120 -}}</p>
@@ -91,20 +72,17 @@
               </div>
             </div>
           </article>
-          <!-- Post end-->
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
-<!-- Posts end-->
 
-<!-- About-->
-<section class="module divider-bottom" id="contact">
+<section class="module" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-md-6 m-auto text-center">
-        <h1>Book a Meeting</h1>
+        <h2 class="h1">Book a Meeting</h2>
         <p class="lead">Interested? Book a free initial consultation with a Youvect team member.</p>
       </div>
     </div>
@@ -115,11 +93,8 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <!-- Google Calendar Appointment Scheduling begin -->
         <iframe class="gcas" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3SSUzrE20kX1XzqLHWSosv6v3AwxF_r9H8DADOm-fD8NjWO0LZEyBJOhPDfrr3Zssr2BhpsY4B?gv=true" style="border:0" width="100%" frameborder="0"></iframe>
-        <!-- end Google Calendar Appointment Scheduling -->
       </div>
     </div>
   </div>
 </section>
-<!-- About end-->
