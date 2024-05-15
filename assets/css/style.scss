@@ -18,3 +18,20 @@
     height: 850px;
   }
 }
+
+.module-cover-h1 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+@media (max-width: 991.98px) {
+  .module-cover-h1 {
+    font-size: 2.625rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .module-cover-h1 {
+    font-size: 2rem;
+  }
+}
