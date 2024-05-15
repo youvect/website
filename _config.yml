@@ -1,8 +1,8 @@
 title: Youvect
 tagline: "Our strategy. Your success. Marketing redefined."
 description: "Transforming brands, amplifying reach: we specialise in strategic digital marketing solutions tailored to elevate your online presence and drive meaningful engagement ultimately maximising your brands impact and growth potential."
-baseurl: "/website"
-url: "https://youvect.github.io"
+baseurl: ""
+url: "https://youvect.com"
 language: en
 region: gb
 date_format: "%B %e, %Y"
