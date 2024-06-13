@@ -7,11 +7,17 @@ Theme based on https://offsetcode.com/themes/boomerang/1.3.1/
 {%- assign description = site.description | strip | escape  -%}
 {%- assign url = site.url | absolute_url -%}
 {%- assign image = '/assets/img/image.jpg' | absolute_url -%}
+{%- assign image_width = 1200 -%}
+{%- assign image_height = 630 -%}
 
 {%- if page.url != '/' -%}
   {%- assign title = page.title | strip | escape | append: ' | ' | append: title -%}
   {%- assign description = page.description | strip | escape -%}
   {%- assign url = page.url | absolute_url -%}
+{%- endif -%}
+
+{%- if page.image.id -%}
+  {%- capture image -%}{%- include image.html id=page.image.id w=image_width h=image_height -%}{%- endcapture -%}
 {%- endif -%}
 
 <!doctype html>
@@ -28,8 +34,8 @@ Theme based on https://offsetcode.com/themes/boomerang/1.3.1/
     <meta property="og:url" content="{{ url }}">
     <meta property="og:image" content="{{ image }}">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="{{- image_width -}}">
+    <meta property="og:image:height" content="{{- image_height -}}">
     <meta property="og:image:alt" content="{{ description }}">
     <meta property="og:locale" content="{{ site.language }}_{{ site.region | upcase }}">
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
