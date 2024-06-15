@@ -4,6 +4,7 @@ description: "In the vast digital landscape, visibility is key to success, and s
 image:
   id: 1486406146926-c627a92ad1ab
   author: seanpollock
+  description: low angle photo of city high rise buildings during daytime
 ---
 
 ## Crafting Your Path to SEO Success
