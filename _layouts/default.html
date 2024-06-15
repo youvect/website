@@ -9,6 +9,7 @@ Theme based on https://offsetcode.com/themes/boomerang/1.3.1/
 {%- assign image = '/assets/img/image.jpg' | absolute_url -%}
 {%- assign image_width = 1200 -%}
 {%- assign image_height = 630 -%}
+{%- assign image_alt = description -%}
 
 {%- if page.url != '/' -%}
   {%- assign title = page.title | strip | escape | append: ' | ' | append: title -%}
@@ -18,6 +19,7 @@ Theme based on https://offsetcode.com/themes/boomerang/1.3.1/
 
 {%- if page.image.id -%}
   {%- capture image -%}{%- include image.html id=page.image.id w=image_width h=image_height -%}{%- endcapture -%}
+  {%- assign image_alt = page.image.description -%}
 {%- endif -%}
 
 <!doctype html>
@@ -36,7 +38,7 @@ Theme based on https://offsetcode.com/themes/boomerang/1.3.1/
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="{{- image_width -}}">
     <meta property="og:image:height" content="{{- image_height -}}">
-    <meta property="og:image:alt" content="{{ description }}">
+    <meta property="og:image:alt" content="{{ image_alt }}">
     <meta property="og:locale" content="{{ site.language }}_{{ site.region | upcase }}">
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/icon.svg' | relative_url }}">
