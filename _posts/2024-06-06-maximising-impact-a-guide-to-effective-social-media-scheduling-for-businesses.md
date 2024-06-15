@@ -4,6 +4,7 @@ description: "In the ever-evolving landscape of social media, consistency is key
 image:
   id: 1517245386807-bb43f82c33c4
   author: headwayio
+  description: black smartphone near person
 ---
 
 ## Understanding the Importance of Social Media Scheduling
