@@ -4,6 +4,7 @@ description: "In today's digital age, social media has emerged as a powerhouse f
 image:
   id: 1587614313085-5da51cebd8ac
   author: windows
+  description: person using microsoft surface laptop on lap with two other people
 ---
 
 ## Understanding the Youvect Approach
