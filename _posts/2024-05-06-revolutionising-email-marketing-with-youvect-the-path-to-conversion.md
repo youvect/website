@@ -4,6 +4,7 @@ description: "In an era of fleeting digital attention spans, email marketing rem
 image:
   id: 1501504905252-473c47e087f8
   author: nickmorrison
+  description: MacBook Pro near white open book
 ---
 
 ## Crafting Compelling Email Campaigns That Convert
